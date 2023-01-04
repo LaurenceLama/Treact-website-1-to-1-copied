@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    border-width: 0;
+    border-color: rgb(226, 232, 240);
+}
+
+
+/* Generalss, (to be used everywhere because yah, it's general) */
+
+.website__padding--whole {
+    padding: 32px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* 
+
+Navigationings
+
+*/
+
+nav {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo {
+    width: 100%;
+    max-width: 40px;
+    margin-right: 12px;
+}
+
+.nav__logo--link {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: #243E63;
+    margin-right: 24px;
+}
+
+.nav__link {
+    margin: 0 24px;
+    padding-bottom: 4px;
+    font-size: 14px;
+    color: #243E63;
+    font-weight: 600;
+}
+
+.nav__link--login {
+    margin-left: 48px;
+}
