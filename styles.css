@@ -26,6 +26,19 @@ li {
     list-style: none;
 }
 
+.btn--purple {
+    color: #f7fafc;
+    background-color: #6415ff;
+    border-radius: 9999px;
+}
+
+.purple {
+    color: #6415ff;
+}
+
+
+
+
 /* 
 
 Navigationings
@@ -62,6 +75,7 @@ nav {
     font-weight: 900;
     color: #243E63;
     margin-right: 24px;
+    padding-bottom: 4px;
 }
 
 .nav__link {
@@ -74,4 +88,66 @@ nav {
 
 .nav__link--login {
     margin-left: 48px;
+}
+
+.nav__link--primary {
+    color: #f7fafc;
+    padding: 12px 32px;
+}
+
+
+/* 
+
+anyway HEADERERS
+
+*/
+
+.header__row {
+    width: 100%;
+    max-width: 1200px;
+    padding: 96px 0;
+    margin: 0 auto;
+}
+
+.header__description {
+    width: 40%;
+}
+
+.header__para {
+    margin: 20px 0px 32px 0;
+}
+
+h1 {
+    color: #1a202c;
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+.header__input {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    border-radius: 9999px;
+    border: 2px solid rgb(226, 232, 240);
+    padding: 20px 192px 20px 32px;
+    font-weight: 500;
+}
+
+input,
+button {
+    font-size: 100%;
+}
+
+
+.header__button {
+    padding: 16px 0;
+    width: 100%;
+    /* max-width: 160px; */
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
 }
