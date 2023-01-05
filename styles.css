@@ -14,7 +14,6 @@
 
 .website__padding--whole {
     padding: 32px;
-    height: 100vh;
     overflow: hidden;
 }
 
@@ -49,7 +48,7 @@ nav {
     display: flex;
 }
 
-.row {
+.nav__row {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -107,6 +106,9 @@ anyway HEADERERS
     max-width: 1200px;
     padding: 96px 0;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__description {
@@ -114,17 +116,23 @@ anyway HEADERERS
 }
 
 .header__para {
-    margin: 20px 0px 32px 0;
+    margin: 32px 0;
+    font-size: 18px;
 }
 
 h1 {
     color: #1a202c;
-    font-size: 36px;
+    font-size: 48px;
     line-height: 1.25;
 }
 
 .header__input {
     position: relative;
+    max-width: 428px;
+
+    /* ALWAYS D.F. ON PARENT DIVS OR ROW/CONTAINER PLS */
+    display: flex;
+    align-items: center;
 }
 
 input {
@@ -142,12 +150,91 @@ button {
 
 
 .header__button {
+    position: absolute;
     padding: 16px 0;
     width: 100%;
-    /* max-width: 160px; */
+    max-width: 160px;
     font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
+    right: 0;
+    margin-right: 8px;
+}
+
+
+.header__customers {
+    margin-top: 80px;
+}
+
+.header__customer--para {
+    font-size: 12px;
+    color: #a0aec0;
+}
+
+.header__customers--img {
+    width: 100%;
+    margin-top: 16px;
+    padding-right: 128px;
+    opacity: 0.5;
+}
+
+.header__big-img--wrapper {
+    width: 60%;
+}
+
+.header__img {
+    width: 100%;
+}
+
+
+
+/* 
+
+I cannot believe it pero LEZGO FEATUUUUUUUUURES
+
+*/
+
+.container {
+    padding: 80px 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features__title {
+    text-align: center;
+}
+
+.features__small-title--wrapper {
+    margin-bottom: 16px;
+}
+
+.features__small-title {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #243E63;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.features__para {
+    width: 100%;
+    max-width: 576px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #7c8ba1;
+    margin: 0 auto;
+    margin-top: 16px;
+    line-height: 1.625;
 }
