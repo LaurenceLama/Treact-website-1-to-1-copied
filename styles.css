@@ -143,6 +143,10 @@ input {
     font-weight: 500;
 }
 
+input::placeholder {
+    opacity: 0.5;
+}
+
 input,
 button {
     font-size: 100%;
@@ -236,5 +240,153 @@ h2 {
     color: #7c8ba1;
     margin: 0 auto;
     margin-top: 16px;
+    margin-bottom: 60px;
     line-height: 1.625;
+}
+
+.features__services--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.features__services {
+    display: flex;
+    margin: 0 16px;
+    padding: 32px 8px;
+
+    /* ill explain from what I can logic, making it /4 resulted to more space since idk, 4>3, honestly just a blind guess, BUT IT WORKSS  */
+    width: calc(100%/4);
+}
+
+.features__img {
+    padding: 20px;
+    border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.090);
+}
+
+/* I put img container div so I can  shape za border to a circle and not cover the entire space, BIG BRAIN */
+
+.features__lists {
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
+.features__title--services {
+    color: #243E63;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.features__description {
+    color: #7c8ba1;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+    line-height: 2;
+}
+
+
+
+/* 
+
+Quality Work, Steps, Values - can honestly dictate that they are the same, on some terms 
+
+*/
+
+
+.quality__row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 96px 0;
+}
+
+.quality__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quality__big--sub-title {
+    margin-top: 16px;
+}
+
+.quality__para {
+    margin: 16px 0 0 0;
+}
+
+.quality__button {
+    margin-top: 32px;
+    padding: 12px 32px;
+    font-size: 14px;
+    font-weight: 700;
+
+    /* this thing enables the margin to take place, if removed, it sticks below para */
+    display: inline-block;
+}
+
+.quality__img--wrapper {
+    width: 50%;
+}
+
+.quality__img {
+    width: 100%;
+}
+
+
+/*
+
+WE NOW STEPS, I REUSED SOME CODES FROM QUALITY, PLS BEAR WITH MY LAZY
+
+*/
+
+
+.steps__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps__wrapper {
+    margin-left: 73px;
+    padding: 32px 0;
+}
+
+.steps__container {
+    display: flex;
+    margin-top: 32px;
+}
+
+.steps__number {
+    display: flex;
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.steps__row--wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+h3 {
+    color: #243E63;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;   
+}
+
+.steps__para {
+    max-width: 320px;
+    color: #718096;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2;
+    margin-top: 12px;
 }
