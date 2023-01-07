@@ -500,18 +500,29 @@ PRICEEEEE , I WANT MONEY, tbh idk how to earn money with what I have learned as 
 
 .plans__wrapper {
     display: flex;
-    flex-wrap: wrap;
+    
+    /* since the original width from THE website contains wider 1200+ to be exact, while pdf guides me to do 1200px so Imma stop explaining why I do not use flex wrap and go along with it */
     justify-content: space-between;
     align-items: center;
 }
 
 .plans {
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 64px;
     margin-right: 32px;
-    padding: 8px 32px 0;
+    /* padding: 8px 32px 0; this thing caps my line divider thing */
+    border: 0 solid white;
+    border-radius: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+}
+
+.plans__business {
+    background-color: rgb(102, 126, 234);
 }
 
 .plans__title,
@@ -526,6 +537,14 @@ PRICEEEEE , I WANT MONEY, tbh idk how to earn money with what I have learned as 
 
 .plans__features {
     padding: 32px;
+    border: 2px solid;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-color: #d7d7d799;
+}
+
+.business--blue {
+    border-color: rgb(117, 141, 249);
 }
 
 
@@ -554,7 +573,7 @@ PRICEEEEE , I WANT MONEY, tbh idk how to earn money with what I have learned as 
 }
 
 .plans__title {
-    padding: 32px 0;
+    padding: 32px;
 }
 
 .plans__name,
@@ -590,4 +609,77 @@ PRICEEEEE , I WANT MONEY, tbh idk how to earn money with what I have learned as 
     margin-top: 20px;
 }
 
-/* jgh -hungry, Imma eat then get back here, I think, pls I will. */
+.plans__button--wrapper {
+    padding: 32px 64px;
+}
+
+.plans__button {
+    width: 100%;
+    padding: 16px 32px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* pricing section again, but I store business things below here */
+
+.business--white {
+    color: #f7fafc;
+}
+
+.plans__duration--white {
+    color: #edf2d7;
+    font-weight: 700;    
+}
+
+.plans__feature--white {
+    color: #e2e8f0;
+}
+
+/* idk where the other business codes there, maybe added later, but for now, I am lazy so good luck future me finding the others */
+
+
+/* 
+
+AAAAAND TESTIC- TESTIMONIALSS
+
+*/
+
+
+/* straight to experiences section (still under testicles) */
+
+/* ok imma sort this out so it looks well-efforted and organized, or so just I can look for debugs a lot fastrer */
+/* heres za order: so container,row,another child idk,then the texts, then I currently foresaw I'll just ignore this order, depends... */
+
+
+.test__experiences {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience__users--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience__users {
+    display: flex;
+}
+
+.user__img--wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.fa-star {
+    font-size: 16px;
+    padding: 0;
+    padding-top: 50px;
+}
+
+.user__img {
+    width: 100%;
+    max-width: 100px;
+}
