@@ -17,6 +17,13 @@
     overflow: hidden;
 }
 
+i {
+    font-size: 20px;
+    border: 0 solid ;
+    border-radius: 100px;
+    padding: 8px;
+}
+
 a {
     text-decoration: none;
 }
@@ -259,11 +266,14 @@ h2 {
     width: calc(100%/4);
 }
 
+
+
 .features__img {
     padding: 20px;
     border-radius: 100px;
     border: 1px solid rgba(0, 0, 0, 0.090);
 }
+
 
 /* I put img container div so I can  shape za border to a circle and not cover the entire space, BIG BRAIN */
 
@@ -290,6 +300,19 @@ h2 {
 
 
 
+
+/* This universal row is for  quality work until the buying now thing */
+
+.main__row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 96px 0;
+}
+
+
+
 /* 
 
 Quality Work, Steps, Values - can honestly dictate that they are the same, on some terms 
@@ -297,13 +320,6 @@ Quality Work, Steps, Values - can honestly dictate that they are the same, on so
 */
 
 
-.quality__row {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    padding: 96px 0;
-}
 
 .quality__content {
     width: 50%;
@@ -390,3 +406,83 @@ h3 {
     line-height: 2;
     margin-top: 12px;
 }
+
+
+/* 
+
+Valyouuuuuuuuuss
+
+*/
+
+
+
+.values__principles--wrapper, 
+.values__principles--title,
+.values__principles {
+    width: 100%;
+    display: flex;
+}
+
+.values__principles {
+    flex-direction: column;
+    margin-top: 32px;
+    margin-right: 16px;
+}
+
+.values__img--dollar {
+    color: rgb(45, 126, 73);
+    background-color: rgb(154 230 180);
+    font-size: 20px;
+    border: 0 solid ;
+    border-radius: 100px;
+    padding: 8px;
+}
+
+h4 {
+        width: 25px;
+        text-align: center; 
+        position : relative;
+      }
+      
+h4:before { 
+        position: absolute;
+        content : "";
+        left  : 45%;
+        top   : 0;
+        height: 100%;
+        width : 0;
+        border-right: 2px  rgb(45, 126, 73) solid;
+       }
+
+
+.values__img--briefcase {
+    color: rgb(155, 43, 43);
+    background-color: rgb(255, 140, 140);
+}
+
+.values__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    color: #243E63;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.values__principles--para {
+    margin-top: 16px;
+    color: #718096;
+    font-size: 16px;
+    line-height: 1.625;
+}
+
+
+
+/* 
+
+PRICEEEEE , I WANT MONEY, tbh idk how to earn money with what I have learned as of now, but I'll stick with what I do know and just enjoy this thing while I get to finish an awesome project, LEZGOOOOO
+
+*/
+
+
