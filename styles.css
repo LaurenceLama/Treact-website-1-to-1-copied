@@ -486,3 +486,108 @@ PRICEEEEE , I WANT MONEY, tbh idk how to earn money with what I have learned as 
 */
 
 
+.pricing__column {
+    flex-direction: column;
+}
+
+.main__three-titles {
+    text-align: center;
+}
+
+.pricing__para {
+    margin: 16px auto 0 auto;
+}
+
+.plans__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plans {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+    margin-right: 32px;
+    padding: 8px 32px 0;
+}
+
+.plans__title,
+.plans__features,
+.plans__button--wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans__features {
+    padding: 32px;
+}
+
+
+.plans__horizontal {
+    position: absolute;
+    height: 8px;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    /* idk why this is here honestly, but my instinct tells me, I need this here */
+    color: inherit;
+}
+
+.hr__kinda-green {
+    background-color: rgb(56, 178, 172);
+}
+
+.hr__kinda-red {
+    background-color: rgb(245, 101, 101);
+}
+
+.hr__kinda-white {
+    background-color: white;
+    color: rgb(100 21 255);
+}
+
+.plans__title {
+    padding: 32px 0;
+}
+
+.plans__name,
+.plans__price,
+.plans__features--title {
+    color: #1a202c;
+    font-weight: 700;
+}
+
+.plans__features--title {
+    font-size: 20px;
+}
+
+.plans__price {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.plans__duration {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(160 174 192);
+}
+
+.plans__feature {
+    color: rgb(113 128 150);
+}
+
+.plans__feature,
+.plans__feature--white {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* jgh -hungry, Imma eat then get back here, I think, pls I will. */
