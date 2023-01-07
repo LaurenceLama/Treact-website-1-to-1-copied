@@ -38,6 +38,10 @@ li {
     border-radius: 9999px;
 }
 
+.upper {
+    text-transform: uppercase;
+}
+
 .purple {
     color: #6415ff;
 }
@@ -651,9 +655,19 @@ AAAAAND TESTIC- TESTIMONIALSS
 /* heres za order: so container,row,another child idk,then the texts, then I currently foresaw I'll just ignore this order, depends... */
 
 
+.quality__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .test__experiences {
     display: flex;
     flex-direction: column;
+}
+
+.test__content {
+    padding-left: 64px;
 }
 
 .experience__users--wrapper {
@@ -664,6 +678,18 @@ AAAAAND TESTIC- TESTIMONIALSS
 
 .experience__users {
     display: flex;
+}
+
+.experience__users--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 24px;
+}
+
+.experience__users--wrapper {
+    /* idk yet */
+    width: 100%;
 }
 
 .user__img--wrapper {
@@ -679,7 +705,36 @@ AAAAAND TESTIC- TESTIMONIALSS
     padding-top: 50px;
 }
 
+.experience__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 16px;
+    color: #243E63;
+}
+
+.experience__description {
+    color: #4a5568;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 16px 0 40px;
+}
+
+.experience__users--occupation {
+    margin-top: 0;
+}
+
+.divider {
+    display: inline;
+    margin: 12px 14px 12px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.131);
+}
+
+.exp__btn {
+    border-radius: 100px;
+}
+
 .user__img {
     width: 100%;
     max-width: 100px;
 }
+
