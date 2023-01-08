@@ -738,3 +738,147 @@ AAAAAND TESTIC- TESTIMONIALSS
     max-width: 100px;
 }
 
+
+
+/* 
+
+FAAAAAAAQSSS
+
+*/
+
+
+
+.main__container {
+    position: relative;
+}
+
+.faqs__row--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.columns__wrapper {
+    margin-top: 48px;
+    width: 100%;
+    max-width: 896px;
+}
+
+.column__for-border {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 16px 40px;
+    background-color: #edf2f7;
+    border-radius: 8px;
+    /* cursor: pointer; next time, this will take too much time (someone said) */
+    cursor: not-allowed;
+}
+
+.column__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column__questions {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+/*
+ 
+TIME TO HOOOOOOOOOOK BEBY ('scam' links btw haha) 
+
+*/
+
+.hook__container {
+    margin-bottom: 64px;
+}
+
+.hook__border--wrapper {
+    background-color: rgb(99, 21, 255);
+    border-radius: 8px;
+    width: 100%;
+    padding: 96px 0;
+    position: relative;
+}
+
+.hook__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hook__title {
+    max-width: 480px;
+    color: #f7fafc;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.hook__buttons {
+    margin-right: 48px;
+}
+
+
+.button__link--start,
+.button__link--contact {
+    color: #f7fafc;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 24px 40px;
+    border-radius: 100px;
+}
+
+.button__link--start {
+    background-color: #f56565;
+    margin-right: 32px;
+}
+
+.button__link--contact {
+    background-color: rgb(99, 21, 255);
+    border: 1px solid;
+}
+
+.hook__designs {
+    position: absolute;
+    border-radius: 8px;
+    width: 100%;
+    overflow: hidden;
+    inset: 0;
+}
+
+
+/*
+ 
+ALL FOOTER BRUUUUV 
+
+*/
+
+footer {
+    background-color: rgb(99, 21, 255);
+}
+
+.f__row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.f__links--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f__links--main {
+    display: flex;
+    align-items: center;
+    width: calc(100%/5);
+}
+
+/* following the pdf as is does not work, for me so, NEXT TIME ill finish this, THEN I POLISH THE   EFFECTS. */
