@@ -26,6 +26,7 @@ i {
 a {
   color: inherit;
   text-decoration: none;
+  position: relative;
 }
 
 li {
@@ -911,7 +912,47 @@ footer {
 }
 
 
+/* 
+
+I got them E fects bro
+
+*/
 
 
-/* following the pdf as is does not work, for me so, NEXT TIME ill finish this, THEN I POLISH THE   EFFECTS. */
-/* NOPE, I am Just VERY DUMB ABOUT THE HTML PLACINGS DIVS SHIEET */
+/* underline effect */
+
+/* how to make zoomy line left to right hover on anchor tags */
+
+.link__hover-effect:after {
+    content: "";
+    position: absolute;
+    color: rgb(100 21 255);
+    background-color: rgb(100 21 255);
+    height: 2px;
+    opacity: 0;
+    bottom: -2px;
+    left: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.link__hover-effect {
+    transition: all 300ms ease-in-out;
+}
+.link__hover-effect:hover {
+    color: rgb(100 21 255);
+}
+
+.link__hover-effect:hover:after {
+    opacity: 1;
+    width: 100%;
+
+}
+
+/* still dk why copying this does not work right away */
+/* now I know, knowing position absolute, it must have a partnered position relative. put this on all a tags */
+
+
+.link__hover-effect--white:after {
+    bottom: -6px;
+    background-color: white;
+}
