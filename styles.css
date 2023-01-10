@@ -37,6 +37,7 @@ li {
   color: #f7fafc;
   background-color: #6415ff;
   border-radius: 9999px;
+  transition: all 300ms ease-in-out;
 }
 
 .upper {
@@ -146,9 +147,10 @@ h1 {
 input {
   width: 100%;
   border-radius: 9999px;
-  border: 2px solid rgb(226, 232, 240);
+  border: 2px solid rgba(206, 213, 221, 0.69);
   padding: 20px 192px 20px 32px;
   font-weight: 500;
+  opacity: 0.7;
 }
 
 input::placeholder {
@@ -592,6 +594,7 @@ PRICEEEEE , I WANT MONEY, tbh idk how to earn money with what I have learned as 
 
 .plans__button {
   width: 100%;
+  max-width: 192px;
   padding: 16px 32px;
   font-size: 14px;
   font-weight: 700;
@@ -673,6 +676,7 @@ AAAAAND TESTIC- TESTIMONIALSS
   font-size: 16px;
   padding: 0;
   padding-top: 50px;
+  color: rgb(246 173 85);
 }
 
 .experience__title {
@@ -700,13 +704,24 @@ AAAAAND TESTIC- TESTIMONIALSS
 }
 
 .exp__btn {
-  border-radius: 100px;
+  transform: scale(1.4);
+  margin: 0 4px;
+
+  /* consistent circling teknik */
+  clip-path: circle(45%);
 }
 
 .user__img {
   width: 100%;
   max-width: 100px;
 }
+
+.fa-arrow-left,
+.fa-arrow-right {
+  transform: scale(0.5);
+  color: rgb(100 21 255);
+}
+
 
 /* 
 
@@ -896,19 +911,22 @@ footer {
     display: flex;
 }
 
-.f__socials {
-    text-align: center;
-    margin-right: 16px;
-    padding: 4px;
-    background-color: #f7fafc;
+.f__socials{
+  text-align: center;
+  padding: 4px;
+  background-color: #f7fafc;
+  
+  /* learn new thengs everyday lezgoo. this fb logo is oblong, and this helped.. */
+  clip-path: circle(45%);
+  /* border-radius: 100px; */
+}
 
-    /* learn new thengs everyday lezgoo. this fb logo is oblong, and this helped.. */
-    clip-path: circle(45%);
-    /* border-radius: 100px; */
+.f__socials:not(:last-child) {
+  margin-right: 16px;
 }
 
 .fab {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 
@@ -919,32 +937,37 @@ I got them E fects bro
 */
 
 
+
 /* underline effect */
 
-/* how to make zoomy line left to right hover on anchor tags */
+/*
+
+Do not copy my other 'projects' for UNDERLINES, COPY THIS
+
+*/
 
 .link__hover-effect:after {
-    content: "";
-    position: absolute;
-    color: rgb(100 21 255);
-    background-color: rgb(100 21 255);
-    height: 2px;
-    opacity: 0;
-    bottom: -2px;
-    left: 0;
-    transition: all 300ms ease-in-out;
+  content: "";
+  position: absolute;
+  color: rgb(100 21 255);
+  background-color: rgb(100 21 255);
+  height: 2px;
+  opacity: 0;
+  bottom: -2px;
+  left: 0;
+  transition: all 300ms ease-in-out;
 }
 
 .link__hover-effect {
-    transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .link__hover-effect:hover {
-    color: rgb(100 21 255);
+  color: rgb(100 21 255);
 }
 
 .link__hover-effect:hover:after {
-    opacity: 1;
-    width: 100%;
+  opacity: 1;
+  width: 100%;
 
 }
 
@@ -953,6 +976,68 @@ I got them E fects bro
 
 
 .link__hover-effect--white:after {
-    bottom: -6px;
-    background-color: white;
+  bottom: -6px;
+  background-color: white;
+}
+
+.link__hover-effect--white:hover {
+  color: #f7fafc;
+}
+
+
+
+/* 
+
+button E-ffects
+
+*/
+
+
+.btn--purple,
+.nav__link--primary,
+.button__link--contact,
+.button__link--start,
+.plans__button,
+input {
+  transition: all 300ms ease;
+}
+
+.nav__link--primary:hover {
+  background-color: #5212d3 !important;
+}
+
+.btn--purple:hover {
+  background-color: #3c0d9b;
+}
+
+input:hover {
+  border-width: 2px;
+  border-color: rgb(160, 174, 192);
+}
+
+.header__e-mail:focus {
+  border-color: rgb(100 21 255);
+  border-width: 2px;
+
+  /* focus-visible gray outline overlaps this violer outline, so we put these */
+  /* it has a wierd gray effect tho, still dk how to remove it. Looks kinda cool tho. */
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+}
+
+.plans__button:hover {
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.12);
+  transform: translate3d(2px,-2px,0);
+}
+
+.hr__kinda-green:hover {
+  background-color: rgb(56, 178, 172);
+}
+
+.hr__kinda-white:hover {
+  background-color: white;
+}
+
+.hr__kinda-red:hover {
+  background-color: rgb(245, 101, 101);
 }
