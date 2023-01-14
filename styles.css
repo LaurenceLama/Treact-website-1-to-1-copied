@@ -502,7 +502,8 @@ PRICEEEEE , I WANT MONEY, tbh idk how to earn money with what I have learned as 
 }
 
 .plans__business {
-  background-color: rgb(102, 126, 234);
+  /* background-color: rgb(102, 126, 234); */
+  background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
 }
 
 .plans__title,
@@ -539,11 +540,12 @@ PRICEEEEE , I WANT MONEY, tbh idk how to earn money with what I have learned as 
 }
 
 .hr__kinda-green {
-  background-color: rgb(56, 178, 172);
-}
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    background-image: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);}
 
 .hr__kinda-red {
-  background-color: rgb(245, 101, 101);
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    background-image: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
 .hr__kinda-white {
@@ -814,11 +816,21 @@ TIME TO HOOOOOOOOOOK BEBY ('scam' links btw haha)
 .button__link--start {
   background-color: #f56565;
   margin-right: 32px;
+  transition: all 300ms ease;
+}
+
+.button__link--start:hover {
+  background-color: rgb(229 62 62);
 }
 
 .button__link--contact {
   background-color: rgb(99, 21, 255);
   border: 1px solid;
+}
+
+.button__link--contact:hover {
+  background-color: rgb(247 250 252);
+  color: rgb(99, 21, 255);
 }
 
 .hook__designs {
@@ -920,7 +932,7 @@ footer {
 }
 
 .f__socials:hover {
-  background-color: #f7fafc;
+  background-color: #f7fafcbc;
 }
 
 .f__socials:not(:last-child) {
@@ -1068,7 +1080,7 @@ section {
 #testimonials,
 #hook,
 footer {
-  animation: fade-left 600ms 6000ms backwards;
+  animation: fade-left 600ms 600ms backwards;
 }
 
 @keyframes fade-left {
@@ -1081,4 +1093,21 @@ footer {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+/* background blobs on some sections, all copied tho, idk how to do these */
+
+.header {
+  position: relative;
+}
+
+.header__design {
+    pointer-events: none;
+    position: absolute;
+    left: -150px;
+    bottom: 140px;
+    z-index: -10;
+    height: 256px;
+    width: 256px;
+    opacity: 0.05;
 }
