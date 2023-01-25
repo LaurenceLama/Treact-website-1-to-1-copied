@@ -58,8 +58,69 @@
                 >
               </li>
             </ul>
+
+            <!-- BURGER time -->
+            <button class="btn__menu" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+              <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu__links">
+                <li>
+                  <a
+                    href="#"
+                    class="nav__link link__hover-effect menu__link"
+                    onclick="closeMenu()"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav__link link__hover-effect menu__link"
+                    onclick="closeMenu()"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#pricing"
+                    class="nav__link link__hover-effect menu__link"
+                    onclick="closeMenu()"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav__link link__hover-effect menu__link"
+                    onclick="closeMenu()"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav__link link__hover-effect menu__link nav__link--login"
+                    onclick="closeMenu()"
+                    >Login</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav__link nav__link--effect menu__link nav__link--primary btn--purple"
+                    onclick="closeMenu()"
+                    >Sign Up</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
+
         <header>
           <div class="header__row">
             <div class="header__description">
@@ -486,7 +547,7 @@
                 <blockquote class="experience__description">
                   Whereas I can just copy it 1:1 by appearance, do what I know,
                   then not waste time. I always do this, I already realized this
-                  from past mistakes, but it is a feisty wall I gotta say
+                  from past mistakes, but it is a feisty wall I gotta say..
                 </blockquote>
                 <div class="experience__users--wrapper">
                   <div class="experience__users">

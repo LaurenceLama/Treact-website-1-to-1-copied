@@ -1,0 +1,88 @@
+<nav>
+  <div class="nav__row">
+    <a href="https://treact.owaiskhan.me/" class="nav__logo--link">
+      <img
+        src="https://treact.owaiskhan.me/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+        alt=""
+        class="nav__logo"
+      />Treact
+    </a>
+    <ul class="nav__links">
+      <li>
+        <a href="#" class="nav__link link__hover-effect">About</a>
+      </li>
+      <li><a href="#" class="nav__link link__hover-effect">Blog</a></li>
+      <li>
+        <a href="#pricing" class="nav__link link__hover-effect">Pricing</a>
+      </li>
+      <li>
+        <a href="#" class="nav__link link__hover-effect">Contact Us</a>
+      </li>
+      <li>
+        <a href="#" class="nav__link link__hover-effect nav__link--login"
+          >Login</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="nav__link nav__link--effect nav__link--primary btn--purple"
+          >Sign Up</a
+        >
+      </li>
+    </ul>
+
+    <!-- BURGER time -->
+    <button class="btn__menu" onclick="openMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="menu__backdrop">
+      <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="menu__links">
+        <li>
+          <a href="#" class="nav__link link__hover-effect" onclick="closeMenu()"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="#" class="nav__link link__hover-effect" onclick="closeMenu()"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a
+            href="#pricing"
+            class="nav__link link__hover-effect"
+            onclick="closeMenu()"
+            >Pricing</a
+          >
+        </li>
+        <li>
+          <a href="#" class="nav__link link__hover-effect" onclick="closeMenu()"
+            >Contact Us</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav__link link__hover-effect nav__link--login"
+            onclick="closeMenu()"
+            >Login</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav__link nav__link--effect nav__link--primary btn--purple"
+            onclick="closeMenu()"
+            >Sign Up</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- I find this doing another-html-to-fix-prettier-command pretty effective, for me at least. common debug errors I find just me being dumb or forgot to make no mistakes, missing codes, on an html file -->
