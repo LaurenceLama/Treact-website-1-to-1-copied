@@ -1248,5 +1248,286 @@ ahhh, right lezgo RESPONSIVENESS
     font-size: 18px;
     margin: 0;
   }
-/* still not finish on this max-width, and I gotta do another from 640px i think and, I think that is it.. Imma polish this some other time, completion is my priority so I can progress through the course  */
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .header__row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header__para,
+  .header__customers,
+  .header__img {
+    max-width: 512px;
+  }
+
+  .header__customers {
+    margin-top: 48px;
+  }
+  
+  .header__customers--img {
+    padding: 0;
+  }
+
+  .features__para {
+    font-size: 16px;
+  }
+
+  .features__services {
+    width: calc(100%/3);
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  .plans__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plans {
+    max-width: 374px;
+  }
+
+  .test__content {
+    padding-left: 48px;
+  }
+
+  .column__questions {
+    font-size: 16px;
+  }
+
+  .hook__content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hook__title,
+  .hook__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hook__buttons {
+    margin: 0;
+    margin-top: 28px;
+  }
+
+  .f__row {
+    padding: 0 24px;
+  }
+
+  .f__info {
+    padding: 0 20px;
+  }
+
+  .f__logo {
+    font-size: 20px;
+  }
 }
+
+@media (max-width: 640px) {
+
+  .header__input {
+    min-height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .header__button {
+    max-width: none;
+    right: auto;
+    bottom: 0;
+    margin: 0;
+  }
+
+  .header__big-img--wrapper {
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .features__para {
+    font-size: 14px;
+  }
+
+  .features__services {
+    width: calc(100%/1);
+    max-width: 300px;
+  }
+
+  .main__row {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .main__row--column {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .quality__img--wrapper,
+  .quality__content {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .quality__content {
+    margin-top: 48px;
+  }
+
+  .steps__container,
+  .features__services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .steps__wrapper {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .steps__row--wrapper {
+    margin: 0;
+    margin-top: 12px;
+  }
+
+  .values__principles--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .values__principles {
+    margin-right: 0;
+  }
+
+  .values__principles--title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .values__principles--para {
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: 16px;
+  }
+
+  .main__three-titles {
+    max-width: 530px;
+  }
+
+  .plans__wrapper {
+    width: 100%;
+  }
+
+  .plans {
+    margin-right: 0;
+    max-width: 370px;
+  }
+
+  .plans__price {
+    font-size: 36px;
+  }
+
+  .plans__button {
+    max-width: none;
+  }
+
+  .test__content {
+    padding-left: 0;
+  }
+
+  .experience__users--wrapper,
+  .experience__users,
+  .hook__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .experience__users--info {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .experience__button--wrapper {
+    margin-top: 32px;
+  }
+
+  .column__questions {
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .hook__title {
+    font-size: 24px;
+  }
+
+  .button__link--start {
+    margin-right: 0;
+  }
+
+  .button__link--contact,
+  .button__link--start {
+    margin-top: 16px;
+  }
+
+  .f__link,
+  .f__links--title {
+    text-align: center;
+  }
+
+  .f__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .f__copyright,
+  .f__socials--wrapper {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 625px) {
+
+  .f__links--main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .f__links {
+    width: calc(100%/4);
+  }
+
+  .f__links:last-child {
+    margin-top: 48px;
+  }
+}
+
+/* Imma polish this some other time, completion is my priority so I can progress through the course  */
+/* For now, GGS it is finally "DONE" */
